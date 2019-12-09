@@ -2,191 +2,99 @@
 <html>
 
 <head>
+
     <title>
         Gradient
         <!-- What name do I want for it - Hot to Cold or Hotter or Cooler TODO -->
     </title>
+    <link href=“style.css” rel=“stylesheet” type=“test/css” />
+
 </head>
 
 <body>
-    <!-- Date here          Gradient TODO logo here             sign in / register here-->
+    
+<!--Header-->
+    <header>
+        <!-- Date here          Gradient TODO logo here             sign in / register here-->
 
-    <table id="t05" style="width:100%">
-        <col style="width:30%">
-        <col style="width:40%">
-        <col style="width:30%">
-        <tbody>
-            <tr>
-                <td>2 December 2019</td>
-                <td>App logo here</td>
-                <td>
-                    <table id="t02" style="width:100%">
-                        <tr>
-                            <td>Sign in</td>
-                        </tr>
-                        <tr>
-                            <td>Username:</td>
-                        </tr>
-                        <tr>
-                            <td>Password:</td>
-                        </tr>
-                        <tr>
-                            <td><br/>New user? - Register here</td>
-                        </tr>
-                    </table>
+        <div class="date">
+            <p>2 December 2019</p>
+        </div>
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br />
+        <div class="logo">
+            <p>App logo here</p>
+        </div>
 
-    <!-- Welcome [name]  and Personalisation tools-->
-    <div>
-        <table id="t06" style="width:100%">
-                <col style="width:30%">
-                <col style="width:40%">
-                <col style="width:30%">
-                <tbody>
-                            <tr>
-                <td>Welcome [Username]</td>
-                <td></td>
-                <td>Click here to personalise settings - font/colour etc</td>
-            </tr>
-        </tbody>
+        <div class="signIn">
+            <p>Sign in</p>
+            <p>Username:</p>
+            <p>Password:</p>
+            <p>New user? - Register here</p>
+        </div>
 
-            </table>
-    </div>
-    <br />
+        <!-- Welcome [name]  and Personalisation tools-->
+        <div class="welcomeName">
+            <td>Welcome [Username]</td>
+        </div>
+
+        <div class="personalise">
+            <td>Click here to personalise settings - font/colour etc</td>
+        </div>
+
+    </header>
 
     <!-- User to insert title they want to give their To Do List -->
     <h1>[Title your TODO list here]</h1>
+
 
     <!-- Form for Search bar -->
     <form class="search01" action="action_page.php">
         <input type="text" placeholder="Search your tasks ..." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-    <br />
+
 
     <!-- Add new task -->
-    <form action="/action_page.php">
+    <form class="newTask" action="/action_page.php">
         Add new task <input type="text" name="ftask">
         <input type="submit" value="Add">
     </form>
-    
+
 
     <!-- No. of tasks remaining -->
-    <p>
-        No of tasks remaining: 10
-    </p>
+    <div class="tasksRemaining">
+        <p>No of tasks remaining: 10 </p>
+    </div>
+
 
     <!-- Section here for the list of tasks set up in a table 
             5 columns - task text, set date alert, share, task completed, delete 
         WHEN USER MARKS TASK AS COMPLETED, TASK SHOULD DROP TO BOTTOM OF LIST -->
-    <table id="t07" width="100%">
-        <col style="width:5%">
-        <col style="width:75%">
-        <col style="width:5%">
-        <col style="width:5%">
-        <col style="width:5%">
-        <col style="width:5%">
+   
+    <div class="rTableRow">
+        <div class="rTableCell"><img src="images/move.png" height="20" /></div>
+        <div class="rTableCell"><p>Most urgent task and all the endless bits of info relating to that task would have to go in here bla
+                bla bla. Need a way of showing only the first 15? words of task text and then when you hover over
+                you see the rest?</p></div>
+        <div class="rTableCell"><img src="images/notification.png" height="20" /></div>
+        <div class="rTableCell"><img src="images/share.png" height="20" /></div>
+        <div class="rTableCell"><img src="images/completed.png" height="20" /></div>
+        <div class="rTableCell"><img src="images/delete.png" height="20" /></div>
+    </div>
 
-        <tbody>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Most urgent task and all the endless bits of info relating to that task would have to go in here bla
-                    bla bla. Need a way of showing only the first 15? words of task text and then when you hover over
-                    you see the rest?</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Second most urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Third most urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Fourth most urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Less urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Less urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Less urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Less urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Less urgent task</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-            <tr>
-                <td><img src="images/move.png" height="20" /></td>
-                <td>Task to be done at some time or other</td>
-                <td><img src="images/notification.png" height="20" /></td>
-                <td><img src="images/share.png" height="20" /></td>
-                <td><img src="images/completed.png" height="20" /></td>
-                <td><img src="images/delete.png" height="20" /></td>
-            </tr>
-        </tbody>
-    </table>
-
+   
     <!-- Maybe only first 10 tasks show on page (so it's not too visualy overwhelming)
             And then there's an arrow below here to reveal more tasks -->
     <div>
-        <table id="t08" style="width:100%">
-            <tr>
-                <td><img src="images/expand_more.png" height="60" /> </td>
-            </tr>
-        </table>
+            <div class="expandArrow"><img src="images/expand_more.png" height="60" /> </div>           
     </div>
+
+
+    <!-- Footer -->
+
+    <footer class="footerText">
+        <p> &copy;RLF    [disclaimer info here]</p>
+    </footer>
 
 </body>
 
