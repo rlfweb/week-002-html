@@ -19,23 +19,15 @@
                 <p>GRADIENT TODO</p>
             </div>
 
-        <!-- Date -->
+        <!--The Log in / Sign up section - to reveal saved lists and data protected. Once signed in, get greeted by name -->
+        <div class="signInAndGreeting">
+                <p>Log in / Sign up / Hello [Susan]</p>
+            </div>
+    
+            <!-- Date -->
         <div id="date">
             <p>Monday 9 December 2019</p>
         </div>
-
-        <!--The Log in / Sign up section - to reveal saved lists and data protected -->
-        <div class="signIn">
-            <p>Log in</p>
-            <p>Sign up</p>
-        </div>
-
-        <!-- Hello [name] -->
-        <div id="helloName">
-            <td>Hello [Susan]</td>
-        </div>
-
-
 
     <!-- Form for Search bar -->
     <div>
@@ -46,32 +38,20 @@
     </div>
 
     <!-- User changes To Do list TITLE / then auto-field of number of tasks remaining-->
-    <h1>Susan's To Do List</h1> <h3>(51)</h3>
+    <div class="todoTitle">
+        <p>Susan's To Do List (51)</p>
+    </div>
 
 <!--Button block-->
-
-<div id="buttonBlock">
-    
-         <div class="table">
-           <div class="row">
-              <div class="cell">
-                    <img src="images/notification.png" height="30" alt="set alert for task">
-              </div>
-              <div class="cell">
-                    <img src="images/share.png" height="30" alt="share task">
-              </div>
-              <div class="cell">
-                    <img src="images/completed.png" height="30" alt="mark task as completed">
-              </div>
-              <div class="cell">
-                    <img src="images/delete1.png" height="30" alt="delete task">
-                 </div>
-            </div>
-         </div>
-
-</div>
-
-
+ 
+        <ul id="footerlist">
+                <li><a href="#"><img src="images/delete1.png" height="20" alt="delete task"></img></a></li>
+                <li><a href="#"><img src="images/completed.png" height="20" alt="mark task as completed"></img></a></li>
+                <li><a href="#"><img src="images/share.png" height="20" alt="share task"></img></a></li>
+                <li><a href="#"><img src="images/notification.png" height="20" alt="set alert for task"></img></a></li>
+            </ul>    
+  
+            
     <!-- Add new task -->
     <form class="newTask" action="/action_page.php">
         Add new task <input type="text" name="ftask">
@@ -111,7 +91,7 @@
 
     <!-- The arrow that floats on the left to reorder all the tasks -->
 
-    <div id="arrow"> <img src="images/double-arrow.png" height="60"> </div>
+    <div id="arrow"> <img src="images/double-arrow-vertical.png" height="400"> </div>
 
 
     <!-- Footer -->
@@ -120,7 +100,7 @@
         <p> &copy;Gradient <br />
             Disclaimer: if we lose all your lists, tough luck</p>
     </footer>
-</div>>
+</div>
 </body>
 
 </html>
