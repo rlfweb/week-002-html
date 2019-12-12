@@ -9,98 +9,98 @@
 
 <!-- I don't have a NAV - does that matter? -->
 
-<body>
-<div id="headerBackground">
-    <!--Header-->
-    <header>
+<body topmargin="0" leftmargin="0" rightmargin="0">
+    <div id="headerBackground">
+        <!--Header-->
+        <header>
 
-        <!-- logo -->
-        <div id="logo">
-                <p>GRADIENT TODO</p>
+            <!-- logo -->
+            <div id="logo">
+                GRADIENT TODO
             </div>
 
-        <!--The Log in / Sign up section - to reveal saved lists and data protected. Once signed in, get greeted by name -->
-        <div class="signInAndGreeting">
-                <p>Log in / Sign up / Hello [Susan]</p>
-            </div>
-    
+            <!--The Log in / Sign up section - to reveal saved lists and data protected. Once signed in, get greeted by name -->
+            <span class="signInAndGreeting">
+                Log in / Sign up / Hello [Susan]
+            </span>
+
             <!-- Date -->
-        <div id="date">
-            <p>Monday 9 December 2019</p>
-        </div>
+            <span id="date">
+                Thursday 12 December 2019
+            </span>
 
-    <!-- Form for Search bar -->
-    <div>
-        <form class="searchBar" action="action_page.php">
-            <input type="text" placeholder="Search your tasks ..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+            <!-- Form for Search bar -->
+            <span>
+                <form class="searchBar" action="action_page.php">
+                    <input type="text" placeholder="Search your tasks ..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </span>
 
-    <!-- User changes To Do list TITLE / then auto-field of number of tasks remaining-->
-    <div class="todoTitle">
-        <p>Susan's To Do List (51)</p>
-    </div>
+            <!-- User changes To Do list TITLE / then auto-field of number of tasks remaining-->
+            <span class="todoTitle">
+                Susan's To Do List (51)
+            </span>
 
-<!--Button block-->
- 
-        <ul id="footerlist">
+            <!--Button block-->
+
+            <ul id="footerlist">
                 <li><a href="#"><img src="images/delete1.png" height="20" alt="delete task"></img></a></li>
                 <li><a href="#"><img src="images/completed.png" height="20" alt="mark task as completed"></img></a></li>
                 <li><a href="#"><img src="images/share.png" height="20" alt="share task"></img></a></li>
                 <li><a href="#"><img src="images/notification.png" height="20" alt="set alert for task"></img></a></li>
-            </ul>    
-  
-            
-    <!-- Add new task -->
-    <form class="newTask" action="/action_page.php">
-        Add new task <input type="text" name="ftask">
-        <input type="submit" value="Add">
-    </form>
+            </ul>
 
-    <!-- Section here for the list of tasks set up in a table 
+
+            <!-- Add new task -->
+            <form class="newTask" action="/action_page.php">
+                Add new task <input type="text" name="ftask">
+                <input type="submit" value="Add">
+            </form>
+
+            <!-- Section here for the list of tasks set up in a table 
         When a task is highlighted by user, can edit, set alert, share, mark as completed and delete
         WHEN USER MARKS TASK AS COMPLETED, TASK SHOULD DROP TO BOTTOM OF LIST -->
-</header>
+        </header>
 
-</div>
-
-<div id="gradientBackground">
-
-<!--info relating to that task would have to go in here. Need a way of showing only the first 15? words of task text and then when you hover over
-            you see the rest?-->
-
-    <div class="taskRow">
-        <p>Most urgent task here</p>
-        <p>second most urgent task here</p>    
-        <p>third most urgent task here</p>    
-        <p>fourth most urgent task here</p>    
-        <p>fifth most urgent task here</p>    
-        <p>sixth most urgent task here</p>    
-        <p>seventh most urgent task here</p>    
-        <p>eighth most urgent task here</p>    
-        <p>ninth most urgent task here</p>    
-        <p>tenth most urgent task here</p>    
-        <p>eleventh most urgent task here</p>    
-        <p>twelfth most urgent task here</p>    
-        <p>thirteenth most urgent task here</p>    
-        <p>fourteenth most urgent task here</p>    
-        <p>fifteenth most urgent task here</p>    
     </div>
 
+    <div id="gradientBackground">
 
-    <!-- The arrow that floats on the left to reorder all the tasks -->
+        <!--info relating to that task would have to go in here. Need a way of showing only the first 15? words of task text and then when you hover over
+            you see the rest?-->
+
+        <div class="taskRow">
+            <p>Most urgent task here</p>
+            <p>second most urgent task here</p>
+            <p>third most urgent task here</p>
+            <p>fourth most urgent task here</p>
+            <p>fifth most urgent task here</p>
+            <p>sixth most urgent task here</p>
+            <p>seventh most urgent task here</p>
+            <p>eighth most urgent task here</p>
+            <p>ninth most urgent task here</p>
+            <p>tenth most urgent task here</p>
+            <p>eleventh most urgent task here</p>
+            <p>twelfth most urgent task here</p>
+            <p>thirteenth most urgent task here</p>
+            <p>fourteenth most urgent task here</p>
+            <p>fifteenth most urgent task here</p>
+        </div>
+
+
+        <!-- The arrow that floats on the left to reorder all the tasks 
 
     <div id="arrow"> <img src="images/double-arrow-vertical.png" height="400"> </div>
+    -->
 
+        <!-- Footer -->
 
-    <!-- Footer -->
-
-    <footer class="footerText">
-        <p> &copy;Gradient <br />
-            Disclaimer: if we lose all your lists, tough luck</p>
-    </footer>
-</div>
+        <footer class="footerText">
+            <p> &copy;Gradient <br />
+                Disclaimer: if we lose all your lists, tough luck</p>
+        </footer>
+    </div>
 </body>
 
 </html>
