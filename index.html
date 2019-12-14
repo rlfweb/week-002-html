@@ -1,106 +1,241 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
 
-
 <head>
-    <title>GRADIENT TODO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GRADIENT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<!-- I don't have a NAV - does that matter? -->
 
-<body topmargin="0" leftmargin="0" rightmargin="0">
-    <div id="headerBackground">
-        <!--Header-->
-        <header>
+<body class="wallpaper">
 
-            <!-- logo -->
-            <div id="logo">
-                GRADIENT TODO
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-4 col-md-4 logo">
+                GRADIENT
+            </div>
+            <div class="date col-4 col-md-4">
+                Saturday 14 December 2019
+            </div>
+            <div class="signInAndGreeting col-4 col-md-4">
+                Log in / Sign up / Hello [Susan]
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="todoTitle col-8 col-md-8">
+                Susan's To Do Lists
             </div>
 
-            <!--The Log in / Sign up section - to reveal saved lists and data protected. Once signed in, get greeted by name -->
-            <span class="signInAndGreeting">
-                Log in / Sign up / Hello [Susan]
-            </span>
-
-            <!-- Date -->
-            <span id="date">
-                Thursday 12 December 2019
-            </span>
-
-            <!-- Form for Search bar -->
-            <span>
+            <div class="col-4 col-md-4">
                 <form class="searchBar" action="action_page.php">
                     <input type="text" placeholder="Search your tasks ..." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
-            </span>
-
-            <!-- User changes To Do list TITLE / then auto-field of number of tasks remaining-->
-            <span class="todoTitle">
-                Susan's To Do List (51)
-            </span>
-
-            <!--Button block-->
-
-            <ul id="footerlist">
-                <li><a href="#"><img src="images/delete1.png" height="20" alt="delete task"></img></a></li>
-                <li><a href="#"><img src="images/completed.png" height="20" alt="mark task as completed"></img></a></li>
-                <li><a href="#"><img src="images/share.png" height="20" alt="share task"></img></a></li>
-                <li><a href="#"><img src="images/notification.png" height="20" alt="set alert for task"></img></a></li>
-            </ul>
-
-
-            <!-- Add new task -->
-            <form class="newTask" action="/action_page.php">
-                Add new task <input type="text" name="ftask">
-                <input type="submit" value="Add">
-            </form>
-
-            <!-- Section here for the list of tasks set up in a table 
-        When a task is highlighted by user, can edit, set alert, share, mark as completed and delete
-        WHEN USER MARKS TASK AS COMPLETED, TASK SHOULD DROP TO BOTTOM OF LIST -->
-        </header>
-
-    </div>
-
-    <div id="gradientBackground">
-
-        <!--info relating to that task would have to go in here. Need a way of showing only the first 15? words of task text and then when you hover over
-            you see the rest?-->
-
-        <div class="taskRow">
-            <p>Most urgent task here</p>
-            <p>second most urgent task here</p>
-            <p>third most urgent task here</p>
-            <p>fourth most urgent task here</p>
-            <p>fifth most urgent task here</p>
-            <p>sixth most urgent task here</p>
-            <p>seventh most urgent task here</p>
-            <p>eighth most urgent task here</p>
-            <p>ninth most urgent task here</p>
-            <p>tenth most urgent task here</p>
-            <p>eleventh most urgent task here</p>
-            <p>twelfth most urgent task here</p>
-            <p>thirteenth most urgent task here</p>
-            <p>fourteenth most urgent task here</p>
-            <p>fifteenth most urgent task here</p>
+            </div>
         </div>
 
 
-        <!-- The arrow that floats on the left to reorder all the tasks 
+        <div class="row">
+            <div class="col-4 col-md-4 grey">
+                <div class="col-12 col-md-12">
+                        <div class="row">
+                                <div class="col-4 col-md-4 grey">
+                                    WORK
+                                </div>
+                                <div class="col-4 col-md-4 grey">
+                                    [31]
+                                </div>
+                                <div class="col-4 col-md-4 grey">
+                                    +
+                                </div>
+                            </div>
+                    
+                </div>
+                <div class="col-12 col-md-12 red">
+                    NOW
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 orange">
+                    NEXT
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 yellow">
+                    SOON
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 grey">
+                    COMPLETED
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
 
-    <div id="arrow"> <img src="images/double-arrow-vertical.png" height="400"> </div>
-    -->
+            </div>
 
-        <!-- Footer -->
 
-        <footer class="footerText">
-            <p> &copy;Gradient <br />
-                Disclaimer: if we lose all your lists, tough luck</p>
-        </footer>
+            <div class="col-4 col-md-4 pink">
+                <div class="col-12 col-md-12">
+                        <div class="row">
+                                <div class="col-4 col-md-4 pink">
+                                    HOME
+                                </div>
+                                <div class="col-4 col-md-4 pink">
+                                    [84]
+                                </div>
+                                <div class="col-4 col-md-4 pink">
+                                    +
+                                </div>
+                            </div>
+                </div>
+                <div class="col-12 col-md-12 red">
+                    NOW
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 orange">
+                    NEXT
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 yellow">
+                    SOON
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-12 pink">
+                    COMPLETED
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4 col-md-4 blue">
+                <div class="col-12 col-md-12">
+                        <div class="row">
+                                <div class="col-4 col-md-4 blue">
+                                    PERSONAL
+                                </div>
+                                <div class="col-4 col-md-4 blue">
+                                    [10]
+                                </div>
+                                <div class="col-4 col-md-4 blue">
+                                    +
+                                </div>
+                            </div>
+                </div>
+                <div class="col-12 col-md-12 red">
+                    NOW
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 orange">
+                    NEXT
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 yellow">
+                    SOON
+                    <div class="col-12 col-md-12">
+                        [task text]
+                    </div>
+                    <div class="col-12 col-md-12">
+                        [task text]
+                        <div class="col-12 col-md-12">
+                            [task text]
+                        </div>
+                        <div class="col-12 col-md-12">
+                            [task text]
+                        </div>
+                        <div class="col-12 col-md-12">
+                            [task text]
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-12 col-md-12 blue">
+                            COMPLETED
+                            <div class="col-12 col-md-12">
+                                    [task text]
+                                  </div>
+                                  <div class="col-12 col-md-12">
+                                        [task text]
+                                      </div>
+                          </div>
+</div>
+            
+        </div>
+
     </div>
+
+
+
+
+
 </body>
 
 </html>
