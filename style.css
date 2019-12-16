@@ -1,70 +1,39 @@
-.red {
-    background-color: red;
-    padding: 10px 10px 10px 10px;
-  }
-.blue {
-    background-color: blue;
-    padding: 10px 10px 10px 10px;
-  }
-  .yellow {
-    background-color: yellow;
-    padding: 10px 10px 10px 10px;
-  }
-  .green {
-    background-color: green;
-    padding: 10px 10px 10px 10px;
-  }
-
-  .orange {
-    background-color: orange;
-    padding: 10px 10px 10px 10px;
-  }
-  .pink {
-    background-color: pink;
-    padding: 10px 10px 10px 10px;
-  }
-  .grey {
-    background-color: grey;
-    padding: 10px 10px 10px 10px;
-  }
-  .green {
-    background-color: green;
-    padding: 10px 10px 10px 10px;
-  }
-
-
   .wallpaper {
     background-color: lightgray;
     }
 
   .logo {
     font-family: candara;
-    background-color: lightgray;
     color: darkcyan;
     padding: 10px 10px 10px 10px;
     }
 
 .taskBoxes {
-    background-color: lightgrey;
     padding: 10px 10px 10px 10px;
+    }
+
+.headColour {
+    background-color: goldenrod;
 }
+
+
 
     .date {
         color: darkcyan;
-        font-size: large;
+        font-size: medium;
         padding: 5px;
         }
         
         .signInAndGreeting {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: darkcyan;
-            font-size: large;
+            font-size: medium;
             padding: 5px;;
             }
         
             .searchBar {
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: yellow;
+                color:darkgoldenrod;
                 padding: 5px;
                 }
             
@@ -72,19 +41,19 @@
 
 
     .todoTitle {
-        color: yellow;
+        color: darkcyan;
         font-size: xxx-large;
         }
 
         .listTitle {
-            color: black;
+            color: darkslategrey;
             font-size: x-large;
             }
     
                         
 .noOfTasksRemaining {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: yellow;
+    color: goldenrod;
     font-size: large;
 
 }
@@ -92,14 +61,14 @@
 
 .priorityHeading {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: darkorange;
-    font-size: large;
+    color: darkcyan;
+    font-size: medium;
 }
 
 .taskText {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: black;
-    font-size: large;
+    color: darkslategrey;
+    font-size: small;
 }
 
         .footerText {
